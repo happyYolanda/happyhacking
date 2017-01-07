@@ -29,7 +29,7 @@ public class RandomizedSet380 {
     /** Inserts a value to the set. Returns true if the set did not already contain the specified element. */
     public boolean insert(int val) {
         if (valueMap.containsKey(val)){
-            return true;
+            return false;
         }
 
         count++;
@@ -50,7 +50,7 @@ public class RandomizedSet380 {
             valueMap.remove(val);
         } else {
             valueMap.remove(val);
-            Integer value = valueMap.get(count);
+            Integer value = randomMap.get(count);
             randomMap.put(index, value);
             randomMap.remove(count);
             valueMap.put(value, index);
@@ -77,5 +77,6 @@ public class RandomizedSet380 {
         collection.getRandom();
         collection.remove(-1);
         collection.insert(-2);
+        collection.getRandom();
     }
 }

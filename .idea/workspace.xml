@@ -2,7 +2,6 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="58c81a11-bc1e-450f-a24a-82fc35a5aa91" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/ThirdMaximumNumber414.java" afterPath="$PROJECT_DIR$/src/main/java/ThirdMaximumNumber414.java" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
@@ -39,8 +38,8 @@
       <file leaf-file-name="ThirdMaximumNumber414.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/main/java/ThirdMaximumNumber414.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="258">
-              <caret line="57" column="6" lean-forward="false" selection-start-line="57" selection-start-column="6" selection-end-line="57" selection-end-column="6" />
+            <state relative-caret-position="234">
+              <caret line="86" column="9" lean-forward="true" selection-start-line="61" selection-start-column="8" selection-end-line="92" selection-end-column="9" />
               <folding>
                 <element signature="e#278#619#0" expanded="true" />
                 <element signature="e#618#619#0" expanded="true" />
@@ -518,8 +517,8 @@
         <state relative-caret-position="204">
           <caret line="62" column="28" lean-forward="false" selection-start-line="62" selection-start-column="28" selection-end-line="62" selection-end-column="28" />
           <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#675#684#0" expanded="true" />
+            <element signature="imports" expanded="false" />
+            <element signature="e#675#684#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -537,8 +536,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/ThirdMaximumNumber414.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="258">
-          <caret line="57" column="6" lean-forward="false" selection-start-line="57" selection-start-column="6" selection-end-line="57" selection-end-column="6" />
+        <state relative-caret-position="234">
+          <caret line="86" column="9" lean-forward="true" selection-start-line="61" selection-start-column="8" selection-end-line="92" selection-end-column="9" />
           <folding>
             <element signature="e#278#619#0" expanded="true" />
             <element signature="e#618#619#0" expanded="true" />

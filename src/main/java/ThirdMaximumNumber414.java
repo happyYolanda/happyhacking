@@ -61,6 +61,7 @@ public class ThirdMaximumNumber414 {
     public int thirdMax(int[] nums) {
         List<Integer> result = new ArrayList<Integer>();
         result.add(Integer.MIN_VALUE);//哨兵
+        boolean flag = false;
         for (int i = 0; i < nums.length; i++){
             int index = -1;
             for (int j = 0; j < result.size(); j++){
@@ -68,6 +69,11 @@ public class ThirdMaximumNumber414 {
                     index = j;
                     break;
                 } else if (result.get(j) == nums[i]){//处理重复
+                    if (!flag && result.get(j) == Integer.MIN_VALUE){
+                        index = j;
+                        flag = true;
+                        break;
+                    }
                     break;
                 }
             }
@@ -89,7 +95,7 @@ public class ThirdMaximumNumber414 {
 
 
     public static void main(String[] args){
-        int[] nums = {3, 2, 1};
+        int[] nums = {1,2,-2147483648};
         ThirdMaximumNumber414 test = new ThirdMaximumNumber414();
         System.out.println(test.thirdMax(nums));
     }

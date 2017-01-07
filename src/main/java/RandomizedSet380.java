@@ -11,7 +11,7 @@ public class RandomizedSet380 {
      */
 
     Integer count;
-    
+
     Map<Integer, Integer> randomMap;
 
     Map<Integer, Integer> valueMap;
@@ -47,6 +47,7 @@ public class RandomizedSet380 {
         Integer index = valueMap.get(val);
         if (index == count){
             randomMap.remove(index);
+            valueMap.remove(val);
         } else {
             valueMap.remove(val);
             Integer value = valueMap.get(count);
@@ -66,5 +67,15 @@ public class RandomizedSet380 {
             return randomMap.get(randomIndex + 1);
         }
         return -1;
+    }
+
+    public static void main(String[] args){
+        RandomizedSet380 collection = new RandomizedSet380();
+        collection.insert(-1);
+        collection.remove(-2);
+        collection.insert(-2);
+        collection.getRandom();
+        collection.remove(-1);
+        collection.insert(-2);
     }
 }

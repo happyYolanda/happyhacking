@@ -94,6 +94,9 @@ public class RandomizedCollection381 {
             break;
         }
         valueMap.get(val).remove(index);
+        if (valueMap.get(val).size() == 0){//如果删除索引后不存在了，要把这个值删掉
+            valueMap.remove(val);
+        }
 
         if (index == count){
             randomMap.remove(index);
@@ -101,8 +104,10 @@ public class RandomizedCollection381 {
             Integer newvalue = randomMap.get(count);//newvalue是count索引对应的值
             randomMap.put(index, newvalue);
             randomMap.remove(count);
-            valueMap.get(newvalue).remove(count);//newvalue原先对应的random索引是count, 现在改为index
-            valueMap.get(newvalue).add(index);
+            if (valueMap.get(newvalue) != null) {//这里如果不加条件限制会有bug, 从原理上没懂为什么
+                valueMap.get(newvalue).remove(count);//newvalue原先对应的random索引是count, 现在改为index
+                valueMap.get(newvalue).add(index);
+            }
         }
 
         count--;

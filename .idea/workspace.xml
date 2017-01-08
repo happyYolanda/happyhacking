@@ -2,20 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="58c81a11-bc1e-450f-a24a-82fc35a5aa91" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/classes/FindAllDuplicatesinanArray442.class" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/classes/FindAllNumbersDisappearedinanArray448.class" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/classes/RandomizedCollection381.class" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/classes/RandomizedSet380.class" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/classes/ThirdMaximumNumber414$1.class" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/classes/ThirdMaximumNumber414.class" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/compiler.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/misc.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/modules.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/vcs.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/happyhacking.iml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/GameofLife289.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.gitignore" afterPath="$PROJECT_DIR$/.gitignore" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/FindtheDuplicateNumber287.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
@@ -35,36 +23,12 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="RandomizedCollection381.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/RandomizedCollection381.java">
+      <file leaf-file-name="FindtheDuplicateNumber287.java" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/main/java/FindtheDuplicateNumber287.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="2286">
-              <caret line="127" column="11" lean-forward="false" selection-start-line="127" selection-start-column="11" selection-end-line="127" selection-end-column="11" />
+            <state relative-caret-position="234">
+              <caret line="19" column="13" lean-forward="true" selection-start-line="19" selection-start-column="13" selection-end-line="19" selection-end-column="13" />
               <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="RandomizedSet380.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/RandomizedSet380.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="581">
-              <caret line="67" column="9" lean-forward="false" selection-start-line="67" selection-start-column="9" selection-end-line="67" selection-end-column="9" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="GameofLife289.java" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/main/java/GameofLife289.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="453">
-              <caret line="138" column="43" lean-forward="false" selection-start-line="138" selection-start-column="43" selection-end-line="138" selection-end-column="43" />
-              <folding>
-                <element signature="imports" expanded="true" />
-                <element signature="e#1141#1184#0" expanded="true" />
-                <element signature="e#1335#1374#0" expanded="true" />
-              </folding>
             </state>
           </provider>
         </entry>
@@ -101,6 +65,7 @@
         <option value="$PROJECT_DIR$/src/main/java/RandomizedCollection381.java" />
         <option value="$PROJECT_DIR$/src/main/java/RandomizedSet380.java" />
         <option value="$PROJECT_DIR$/src/main/java/GameofLife289.java" />
+        <option value="$PROJECT_DIR$/src/main/java/FindtheDuplicateNumber287.java" />
       </list>
     </option>
   </component>
@@ -517,7 +482,7 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="71" y="21" width="1295" height="747" extended-state="6" />
-    <editor active="false" />
+    <editor active="true" />
     <layout>
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
@@ -533,7 +498,7 @@
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Tool" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.27258688" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.27258688" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="UI Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
@@ -621,11 +586,15 @@
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/InsertDeleteGetRandomDuplicatesallowed.java" />
-    <entry file="file://$PROJECT_DIR$/src/main/java/RandomizedCollection381.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/GameofLife289.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="2286">
-          <caret line="127" column="11" lean-forward="false" selection-start-line="127" selection-start-column="11" selection-end-line="127" selection-end-column="11" />
-          <folding />
+        <state relative-caret-position="453">
+          <caret line="138" column="43" lean-forward="false" selection-start-line="138" selection-start-column="43" selection-end-line="138" selection-end-column="43" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#1141#1184#0" expanded="true" />
+            <element signature="e#1335#1374#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -637,15 +606,19 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/GameofLife289.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/RandomizedCollection381.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="453">
-          <caret line="138" column="43" lean-forward="false" selection-start-line="138" selection-start-column="43" selection-end-line="138" selection-end-column="43" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#1141#1184#0" expanded="true" />
-            <element signature="e#1335#1374#0" expanded="true" />
-          </folding>
+        <state relative-caret-position="349">
+          <caret line="127" column="11" lean-forward="false" selection-start-line="127" selection-start-column="11" selection-end-line="127" selection-end-column="11" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/FindtheDuplicateNumber287.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="234">
+          <caret line="19" column="13" lean-forward="true" selection-start-line="19" selection-start-column="13" selection-end-line="19" selection-end-column="13" />
+          <folding />
         </state>
       </provider>
     </entry>

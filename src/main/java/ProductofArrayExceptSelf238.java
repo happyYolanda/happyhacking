@@ -7,19 +7,30 @@ public class ProductofArrayExceptSelf238 {
      * 使用移位操作代替除法
      * 要十分注意0的问题
      */
-    public int Div(int x, int y)//利用二进制的性质,减小加减次数，但是乘法次数增加
-    {
-        int ans = 0;
-        while(x >= y)
-        {
-            int mul = 1;
-            while(y*mul <= x)
-                mul <<= 1;
-            mul >>=1;//上一步多左移了一位，需要右移补回
-            ans += mul;
-            x -= mul*y;
+    public int BinaryDivide(int a, int b){
+        boolean neg = (a > 0) ^ (b > 0);
+        if(a < 0)
+            a = -a;
+        if(b < 0)
+            b = -b;
+        if(a < b)
+            return 0;
+        int msb = 0;
+        //msd记录除数需要左移的位数
+        for(msb = 0; msb < 32; msb++) {
+            if((b << msb) >= a)
+                break;
         }
-        return ans;
+        int q = 0; //记录每次除法的商
+        for(int i = msb; i >= 0; i--) {
+            if((b << i) > a)
+                continue;
+            q |= (1 << i);
+            a -= (b << i);
+        }
+        if(neg)
+            return -q;
+        return q;
     }
 
     public int[] productExceptSelf(int[] nums) {
@@ -47,7 +58,7 @@ public class ProductofArrayExceptSelf238 {
                     nums[i] = 0;
                 }
             } else {
-                nums[i] = Div(product, nums[i]);
+                nums[i] = BinaryDivide(product, nums[i]);
             }
         }
         return nums;
@@ -55,6 +66,6 @@ public class ProductofArrayExceptSelf238 {
 
     public static void main(String[] args){
         ProductofArrayExceptSelf238 test = new ProductofArrayExceptSelf238();
-        System.out.println(test.Div(-1,-1));
+        System.out.println(test.BinaryDivide(-1,-1));
     }
 }

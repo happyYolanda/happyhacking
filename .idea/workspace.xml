@@ -16,39 +16,16 @@
   <component name="ExecutionTargetManager" SELECTED_TARGET="default_target" />
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="SummaryRanges228.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/SummaryRanges228.java">
+      <file leaf-file-name="CombinationSum39.java" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/main/java/CombinationSum39.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-90">
-              <caret line="19" column="28" lean-forward="true" selection-start-line="19" selection-start-column="28" selection-end-line="19" selection-end-column="28" />
+            <state relative-caret-position="120">
+              <caret line="40" column="4" lean-forward="false" selection-start-line="40" selection-start-column="4" selection-end-line="99" selection-end-column="5" />
               <folding>
                 <element signature="imports" expanded="true" />
-                <element signature="e#477#485#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="ContainsDuplicate217.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/ContainsDuplicate217.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="75">
-              <caret line="5" column="15" lean-forward="true" selection-start-line="5" selection-start-column="13" selection-end-line="5" selection-end-column="33" />
-              <folding>
-                <element signature="e#448#457#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="ContainsDuplicate219.java" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/main/java/ContainsDuplicate219.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="333">
-              <caret line="26" column="5" lean-forward="false" selection-start-line="26" selection-start-column="5" selection-end-line="26" selection-end-column="5" />
-              <folding>
-                <element signature="imports" expanded="true" />
-                <element signature="e#551#569#0" expanded="true" />
+                <element signature="e#1470#1485#0" expanded="true" />
+                <element signature="e#1550#1556#0" expanded="true" />
+                <element signature="e#2101#2110#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -74,6 +51,7 @@
         <option value="$PROJECT_DIR$/src/main/java/SummaryRanges228.java" />
         <option value="$PROJECT_DIR$/src/main/java/ContainsDuplicate217.java" />
         <option value="$PROJECT_DIR$/src/main/java/ContainsDuplicate219.java" />
+        <option value="$PROJECT_DIR$/src/main/java/CombinationSum39.java" />
       </list>
     </option>
   </component>
@@ -429,8 +407,8 @@
         <state relative-caret-position="-90">
           <caret line="19" column="28" lean-forward="true" selection-start-line="19" selection-start-column="28" selection-end-line="19" selection-end-column="28" />
           <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#477#485#0" expanded="true" />
+            <element signature="imports" expanded="false" />
+            <element signature="e#477#485#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -440,7 +418,7 @@
         <state relative-caret-position="75">
           <caret line="5" column="15" lean-forward="true" selection-start-line="5" selection-start-column="13" selection-end-line="5" selection-end-column="33" />
           <folding>
-            <element signature="e#448#457#0" expanded="true" />
+            <element signature="e#448#457#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -450,8 +428,21 @@
         <state relative-caret-position="333">
           <caret line="26" column="5" lean-forward="false" selection-start-line="26" selection-start-column="5" selection-end-line="26" selection-end-column="5" />
           <folding>
+            <element signature="imports" expanded="false" />
+            <element signature="e#551#569#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/CombinationSum39.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="120">
+          <caret line="40" column="4" lean-forward="false" selection-start-line="40" selection-start-column="4" selection-end-line="99" selection-end-column="5" />
+          <folding>
             <element signature="imports" expanded="true" />
-            <element signature="e#551#569#0" expanded="true" />
+            <element signature="e#1470#1485#0" expanded="true" />
+            <element signature="e#1550#1556#0" expanded="true" />
+            <element signature="e#2101#2110#0" expanded="true" />
           </folding>
         </state>
       </provider>

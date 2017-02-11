@@ -45,10 +45,11 @@ public class CombinationSum39 {
         for (int i = 0; i < candidates.length; i++){
             int num = target / candidates[i];
             Pair pair = new Pair(candidates[i], num);
+            //System.out.println(pair.a + "\t" + pair.b);
             pairs.add(pair);
         }
-
-        result = recursive(pairs, 0, result, new ArrayList<Integer>());
+        //System.out.println();
+        result = recursive(pairs, target, result, new ArrayList<Integer>());
         return result;
     }
 
@@ -62,30 +63,28 @@ public class CombinationSum39 {
                 tresult.add(pairs.get(i).a);
             }
             tsum = tsum + tempr.get(i) * pairs.get(i).a;
-            if (tsum > sum){
-                return result;
-            }
-
             if (tsum == sum){
                 result.add(tresult);
                 return result;
             }
+
+            if (tsum > sum){
+                return result;
+            }
         }
 
-        for (int i = 0; i < pairs.size(); i++){
-            if (i < tempr.size()){
-                continue;
-            }
-
-            for (int j = 0; j <= pairs.get(i).b; j++){
+        int i = tempr.size();
+        if (i < pairs.size()) {
+            for (int j = 0; j <= pairs.get(i).b; j++) {
                 tempr.add(j);
+                /*for (int k = 0; k < tempr.size(); k++) {
+                    System.out.print(tempr.get(k) + "\t");
+                }*/
+                //System.out.println();
                 result = recursive(pairs, sum, result, tempr);
-                tempr.remove(j);
+                tempr.remove(tempr.size() - 1);
             }
-
-            tempr.add(0);
         }
-
 
         return result;
     }
@@ -97,5 +96,20 @@ public class CombinationSum39 {
             this.a = a;
             this.b = b;
         }
+    }
+
+    public static void main(String[] args){
+        int[] candidates = {2, 3, 6, 7};
+        int target = 7;
+        CombinationSum39 combinationSum39 = new CombinationSum39();
+        List<List<Integer>> result = combinationSum39.combinationSum(candidates, target);
+        System.out.println();
+        for (int i = 0; i < result.size(); i++){
+            for (int j = 0; j < result.get(i).size(); j++){
+                System.out.print(result.get(i).get(j) + "\t");
+            }
+            System.out.println();
+        }
+
     }
 }

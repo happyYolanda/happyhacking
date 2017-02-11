@@ -24,11 +24,29 @@ public class SummaryRanges228 {
                     continue;
                 }
 
-                result.add(String.valueOf(A) + "->" + String.valueOf(B));
+                if (A < B) {
+                    /*
+                     * FIX第一次提交产生的badcase
+                     * Input:
+                     * [-1]
+                     * Output:
+                     * ["-1->-1"]
+                     * Expected:
+                     * ["-1"]
+                     */
+                    result.add(String.valueOf(A) + "->" + String.valueOf(B));
+                } else {
+                    result.add(String.valueOf(A));
+                }
                 A = nums[i];
                 B = nums[i];
             }
-            result.add(String.valueOf(A) + "->" + String.valueOf(B));
+
+            if (A < B) {
+                result.add(String.valueOf(A) + "->" + String.valueOf(B));
+            } else {
+                result.add(String.valueOf(A));
+            }
         }
         return result;
     }

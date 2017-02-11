@@ -1,62 +1,60 @@
 import java.util.ArrayList;
-import java.util.HashMap;
 import java.util.List;
-import java.util.Map;
 
 /**
  * Created by majing on 2017/2/11.
  */
-public class CombinationSum40 {
+public class CombinationSum216 {
     /**
-     * 跟39的区别是输入可以有重复，输出不允许重复(除非输入重复了)
-     * For example, given candidate set [10, 1, 2, 7, 6, 1, 5] and target 8,
-     * [
-     * [1, 7],
-     * [1, 2, 5],
-     * [2, 6],
-     * [1, 1, 6]
-     * ]
+     * Find all possible combinations of k numbers that add up to a number n, given that only numbers from 1 to 9 can
+     * be used and each combination should be a unique set of numbers.
+     *
+     * Example 1:
+     * Input: k = 3, n = 7
+     * Output:
+     * [[1,2,4]]
+     *
+     * Example 2:
+     * Input: k = 3, n = 9
+     * Output:
+     * [[1,2,6], [1,3,5], [2,3,4]]
      *
      * 思路:
-     * 39中输入数据中每个数的个数改为根据candidate来
+     * 跟39一样，只是自己做Pair数据, 而且要做一个限制，就是数字总数不能超过k
      */
-    public List<List<Integer>> combinationSum2(int[] candidates, int target) {
+
+    public List<List<Integer>> combinationSum3(int k, int n) {
         List<List<Integer>> result = new ArrayList<List<Integer>>();
         //先做Triple数据
         List<Pair> pairs = new ArrayList<Pair>();
-        Map<Integer, Integer> map = new HashMap<Integer, Integer>();
-
-        for (int i = 0; i < candidates.length; i++){
-            if (map.containsKey(candidates[i])){
-                int value = map.get(candidates[i]);
-                map.put(candidates[i], value + 1);
-            } else {
-                map.put(candidates[i], 1);
-            }
-        }
-
-        for (Map.Entry<Integer, Integer> m : map.entrySet()){
-            Pair pair = new Pair(m.getKey(), m.getValue());
+        for (int i = 1; i <= 9; i++){
+            Pair pair = new Pair(i, 1);
+            //System.out.println(pair.a + "\t" + pair.b);
             pairs.add(pair);
         }
-
-
         //System.out.println();
-        result = recursive(pairs, target, result, new ArrayList<Integer>());
+        result = recursive(pairs, n, result, new ArrayList<Integer>(), k);
         return result;
     }
 
-    public List<List<Integer>> recursive(List<Pair> pairs, int sum, List<List<Integer>> result, List<Integer> tempr){
+    public List<List<Integer>> recursive(List<Pair> pairs, int sum, List<List<Integer>> result,
+                                         List<Integer> tempr, int cnt){
         //如果当前和已经超过sum, 则剪枝
         //如果当前和=sum, 加入到结果集中并不继续
         int tsum = 0;
+        int tcnt = 0;
         List<Integer> tresult = new ArrayList<Integer>();
         for (int i = 0; i < tempr.size(); i++){
             for (int j = 0; j < tempr.get(i); j++){
                 tresult.add(pairs.get(i).a);
             }
             tsum = tsum + tempr.get(i) * pairs.get(i).a;
-            if (tsum == sum){
+            tcnt += tempr.get(i);
+            if (tcnt > cnt){
+                return result;
+            }
+
+            if (tsum == sum && tcnt == cnt){
                 result.add(tresult);
                 return result;
             }
@@ -74,7 +72,7 @@ public class CombinationSum40 {
                     System.out.print(tempr.get(k) + "\t");
                 }*/
                 //System.out.println();
-                result = recursive(pairs, sum, result, tempr);
+                result = recursive(pairs, sum, result, tempr, cnt);
                 tempr.remove(tempr.size() - 1);
             }
         }
@@ -92,11 +90,8 @@ public class CombinationSum40 {
     }
 
     public static void main(String[] args){
-        int[] candidates = {13,23,25,11,7,26,14,11,27,27,26,12,8,20,22,34,27,17,5,26,31,11,16,27,13,
-                20,29,18,7,14,13,15,25,25,21,27,16,22,33,8,15,25,16,18,10,25,9,24,7,32,15,26,30,19};
-        int target = 25;
-        CombinationSum40 combinationSum40 = new CombinationSum40();
-        List<List<Integer>> result = combinationSum40.combinationSum2(candidates, target);
+        CombinationSum216 combinationSum39 = new CombinationSum216();
+        List<List<Integer>> result = combinationSum39.combinationSum3(3, 9);
         System.out.println();
         for (int i = 0; i < result.size(); i++){
             for (int j = 0; j < result.get(i).size(); j++){

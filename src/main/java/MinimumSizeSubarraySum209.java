@@ -34,11 +34,11 @@ public class MinimumSizeSubarraySum209 {
             end = i;
 
             while (sum >= s && end >= begin){
-                sum -= nums[begin];
-                begin++;
                 if (sum >= s && (result == 0 || end - begin + 1 < result)){
                     result = end - begin + 1;
                 }
+                sum -= nums[begin];
+                begin++;
             }
 
             //System.out.println(result);
@@ -47,8 +47,8 @@ public class MinimumSizeSubarraySum209 {
     }
 
     public static void main(String[] args){
-        int[] nums = {1,2,3,4,5};
+        int[] nums = {2,3,1,2,4,3};
         MinimumSizeSubarraySum209 minimumSizeSubarraySum209 = new MinimumSizeSubarraySum209();
-        System.out.println(minimumSizeSubarraySum209.minSubArrayLen(15, nums));
+        System.out.println(minimumSizeSubarraySum209.minSubArrayLen(7, nums));
     }
 }

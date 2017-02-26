@@ -42,28 +42,24 @@ public class CombinationSum40 {
 
 
         //System.out.println();
-        result = recursive(pairs, target, result, new ArrayList<Integer>());
+        result = recursive(pairs, target, 0, result, new ArrayList<Integer>());
         return result;
     }
 
-    public List<List<Integer>> recursive(List<Pair> pairs, int sum, List<List<Integer>> result, List<Integer> tempr){
+    public List<List<Integer>> recursive(List<Pair> pairs, int sum, int tsum, List<List<Integer>> result, List<Integer> tempr){
         //如果当前和已经超过sum, 则剪枝
         //如果当前和=sum, 加入到结果集中并不继续
-        int tsum = 0;
-        List<Integer> tresult = new ArrayList<Integer>();
-        for (int i = 0; i < tempr.size(); i++){
-            for (int j = 0; j < tempr.get(i); j++){
-                tresult.add(pairs.get(i).a);
+        if (tsum == sum){
+            List<Integer> tresult = new ArrayList<Integer>();
+            for (int i = 0; i < tempr.size(); i++){
+                for (int j = 0; j < tempr.get(i); j++){
+                    tresult.add(pairs.get(i).a);
+                }
             }
-            tsum = tsum + tempr.get(i) * pairs.get(i).a;
-            if (tsum == sum){
-                result.add(tresult);
-                return result;
-            }
-
-            if (tsum > sum){
-                return result;
-            }
+            result.add(tresult);
+            return result;
+        } else if (tsum > sum){
+            return result;
         }
 
         int i = tempr.size();
@@ -74,7 +70,7 @@ public class CombinationSum40 {
                     System.out.print(tempr.get(k) + "\t");
                 }*/
                 //System.out.println();
-                result = recursive(pairs, sum, result, tempr);
+                result = recursive(pairs, sum, tsum + j * pairs.get(i).b, result, tempr);
                 tempr.remove(tempr.size() - 1);
             }
         }
